@@ -16,7 +16,7 @@ def function1():
         if "reset" in request.form:
             session.pop("randomnumb", None)
             session["randomnumb"] = random.randint(0, 100)
-            output = "Number to be guessed was reset. Please hard-reload the website!(e.g. reload the website without cache)"
+            output = "Number to be guessed was reset. Please reload the website through the address bar!(e.g. initiate a new request from your browser)"
         else:
             number = int(request.form.get("number"))
             if number > randomnumb:
