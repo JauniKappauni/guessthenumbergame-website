@@ -7,11 +7,16 @@
 </head>
 <body>
     <form method="post">
-        <input type="number" name="number">
+        <input type="number" name="number" required>
         <input type="submit">
     </form>
+    <form method="post">
+        <input type="submit" name="reset" value="Reset Number">
+    </form>
     <pre>
-        {{output}}
+        Result: {{output}}
+        Random Number: {{randomnumb}}
+        Number to be guessed: {{number}}
     </pre>
 </body>
 </html>
